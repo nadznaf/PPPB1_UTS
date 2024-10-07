@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/top_navbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/instagram_logo"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+    <ImageView
+        android:id="@+id/ib_like"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintRight_toLeftOf="@id/ib_share"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/ib_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginVertical="10dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_top_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="50dp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_user_story"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/user_story"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_navbar" />
+
+    <TextView
+        android:id="@+id/txt_user_story"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Cerita Anda"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/iv_user_story"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_assets_story1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/asset_story"
+        app:layout_constraintLeft_toRightOf="@id/iv_user_story"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_navbar" />
+
+    <TextView
+        android:id="@+id/txt_assets_story1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Assets"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/txt_user_story"
+        app:layout_constraintTop_toBottomOf="@id/iv_assets_story1"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_liga_story1"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/liga_story"
+        app:layout_constraintLeft_toRightOf="@id/iv_assets_story1"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_navbar" />
+
+    <TextView
+        android:id="@+id/txt_liga_story1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Liga"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/txt_assets_story1"
+        app:layout_constraintTop_toBottomOf="@id/iv_liga_story1"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_assets_story2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/asset_story"
+        app:layout_constraintLeft_toRightOf="@id/iv_liga_story1"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_navbar" />
+
+    <TextView
+        android:id="@+id/txt_assets_story2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Assets"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/txt_liga_story1"
+        app:layout_constraintTop_toBottomOf="@id/iv_assets_story2"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/iv_liga_story2"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/liga_story"
+        app:layout_constraintLeft_toRightOf="@id/iv_assets_story2"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_navbar" />
+
+    <TextView
+        android:id="@+id/txt_liga_story2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Liga"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@id/txt_assets_story2"
+        app:layout_constraintTop_toBottomOf="@id/iv_liga_story2"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/bottom_navbar"
+        app:layout_constraintTop_toBottomOf="@id/gl_top_navbar">
+
+    </ScrollView>
+    <ImageView
+        android:id="@+id/iv_fufufafa_pp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/fufufafa_pp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_story"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/usn_fufufafa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_fufufafa_pp"
+        app:layout_constraintTop_toBottomOf="@id/txt_user_story"
+        android:text="Fufufafa"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/txt_loc_fufufafa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_fufufafa_pp"
+        app:layout_constraintTop_toBottomOf="@id/usn_fufufafa"
+        android:text="Putra Mulyono"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+    <ImageView
+        android:id="@+id/fufufafa_post"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/post_fufufafa"
+        app:layout_constraintTop_toBottomOf="@id/iv_fufufafa_pp"/>
+    <ImageView
+        android:id="@+id/post_like1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintTop_toBottomOf="@id/fufufafa_post"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <ImageView
+        android:id="@+id/post_comment1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintTop_toBottomOf="@id/fufufafa_post"
+        app:layout_constraintLeft_toRightOf="@id/post_like1"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintTop_toBottomOf="@id/fufufafa_post"
+        app:layout_constraintLeft_toRightOf="@id/post_comment1"
+        />
+    <TextView
+        android:id="@+id/like_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Disukai oleh Ikhwan_Hanif"
+        app:layout_constraintTop_toBottomOf="@id/post_like1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/fufufafa_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Fufufafa #Proud"
+        app:layout_constraintTop_toBottomOf="@id/like_info"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <ImageView
+        android:id="@+id/iv_assets_pp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/assets_ugm_pp"
+        app:layout_constraintTop_toBottomOf="@id/fufufafa_desc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+    <TextView
+        android:id="@+id/usn_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_assets_pp"
+        app:layout_constraintTop_toBottomOf="@id/fufufafa_desc"
+        android:text="Fufufafa"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="12sp"/>
+    <TextView
+        android:id="@+id/txt_loc_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_assets_pp"
+        app:layout_constraintTop_toBottomOf="@id/usn_assets"
+        android:text="Putra Mulyono"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="12sp"/>
+    <ImageView
+        android:id="@+id/assets_post"
+        android:layout_width="match_parent"
+        android:layout_height="355dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/post_asset"
+        app:layout_constraintTop_toBottomOf="@id/iv_assets_pp"/>
+    <ImageView
+        android:id="@+id/post_like2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintTop_toBottomOf="@id/assets_post"
+        />
+    <ImageView
+        android:id="@+id/post_comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_comment"
+        app:layout_constraintTop_toBottomOf="@id/assets_post"
+        app:layout_constraintLeft_toRightOf="@id/post_like2"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/ic_share"
+        app:layout_constraintTop_toBottomOf="@id/fufufafa_post"
+        app:layout_constraintLeft_toRightOf="@id/post_comment1"
+        />
+    <TextView
+        android:id="@+id/like_info2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Disukai oleh Ikhwan_Hanif"
+        app:layout_constraintTop_toBottomOf="@id/post_like2"
+        />
+    <TextView
+        android:id="@+id/assets_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fufufafa #Proud"
+        app:layout_constraintTop_toBottomOf="@id/like_info2"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_navbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_home_active" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_search" />
+
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_upload" />
+
+        <ImageView
+            android:id="@+id/reels"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_reels" />
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_profile" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
